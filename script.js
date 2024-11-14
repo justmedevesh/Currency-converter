@@ -1,4 +1,4 @@
-const apiKey = 'f4375004b97f3b505056c9fd'; // Use a currency API key like from https://openexchangerates.org or any other currency API
+const apiKey = 'YOUR_API_KEY'; // Use a currency API key like from https://openexchangerates.org or any other currency API
 const countries = [
     { name: 'Afghanistan', code: 'AFN', flag: 'https://www.countryflags.io/af/flat/32.png' },
     { name: 'Albania', code: 'ALL', flag: 'https://www.countryflags.io/al/flat/32.png' },
