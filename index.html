@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        
+        <div class="conversion">
+            <label for="from">From:</label>
+            <select id="from" onchange="getRates()">
+                <!-- Country options will be dynamically added here -->
+            </select>
+
+            <div class="input-group amount-container">
+                <label for="amount">Amount:</label>
+                <input 
+                    type="number" 
+                    id="amount" 
+                    class="amount-input" 
+                    placeholder="Enter amount"
+                    min="0"
+                >
+            </div>
+            
+            <label for="to">To:</label>
+            <select id="to" onchange="getRates()">
+                <!-- Country options will be dynamically added here -->
+            </select>
+            
+            <button onclick="convertCurrency()">Convert</button>
+        </div>
+
+        <div id="result">
+            <p>Converted Amount: <span id="convertedAmount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
